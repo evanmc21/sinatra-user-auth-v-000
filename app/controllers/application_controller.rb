@@ -20,7 +20,6 @@ class ApplicationController < Sinatra::Base
     @user.save
     session[:id] = @user.id
     redirect '/users/home'
-    
   end
 
   get '/sessions/login' do
